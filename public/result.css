@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: url("http://www.brownhorsecareservicesltd.co.uk/wp-content/gallery/Backgrn/photo-1434064511983-18c6dae20ed5.jpg") center;
+  color:#fff;
+}
+#input-form{
+  text-align:center;
+  padding-top:30px;
+}
+#input-form .btn, #input-text {
+  width:250px;
+  margin-top:10px;
+}
+.info,.info .font-weight-bold{
+  text-align:center;
+}
+.info .font-weight-bold{
+  font-size:40px;
+  margin-bottom:0px;
+}
+.col2{
+  text-align:left;
+}
+.col1{
+  text-align:right;
+}
+.col1 #temp{
+  font-size:100px;
+  margin-bottom:0px;
+  
+}
+.col1 #status, .col1 #cloud,.col1 #description{
+  margin-bottom:0px;
+  font-size:30px;
+}
+.col2{
+  
+  background-color: rgba(0, 0, 0, 0.4);
+}  
+.col2 ul{
+  list-style-type: none;
+  margin-top:20px;
+}
+.col2 ul li {
+  font-size:30px;
+}
+img {
+  width:30px;
+}
+.col1 p img {
+  width:50px;
+}

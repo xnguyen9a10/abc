@@ -1,0 +1,33 @@
+<% include partials/header %>
+
+   <div class="container">
+       <div class="info">
+           <p class="font-weight-bold"><%=data.name%>, <%=data["sys"]["country"]%> <img src='http://openweathermap.org/images/flags/<%=data["sys"]["country"].toLowerCase()%>.png'></p>
+           <p id="time">Data receiving time: <strong><%=data.dt%></strong></p>
+       </div>
+       <div class="container">
+        <div class="row">
+           <div class="col col1">
+                <p id="temp"><%=data.main.temp%>&#x2103;</p>
+                <p id="status"><img src='http://openweathermap.org/img/w/<%=data.weather[0].icon%>.png'><%=data.weather[0].main%> - <%=data.weather[0].description%></p>
+    
+                <p id="cloud">Cloud cover <%=data.clouds.all%>%</p>
+           </div>
+           <div class="col col2">
+                <ul>
+                  <li>Wind: <strong><%=data.wind.speed%> km/h</strong></li>
+                  <li>Visibility: <strong><%=data.visibility%> ft</strong></li>
+                  <li>Humidity: <strong><%=data.main.humidity%>%</strong></li>
+                  <li>Max temperature: <strong><%=data.main.temp_min%>&#x2103;</strong></li>
+                  <li>Min temperature: <strong><%=data.main.temp_max%>&#x2103;</strong></li>
+                </ul>
+           </div>
+         </div>
+    </div>
+</div>
+    
+    
+
+    
+<%include partials/footer %>
+
